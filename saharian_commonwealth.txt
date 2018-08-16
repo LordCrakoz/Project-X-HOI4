@@ -1,0 +1,684 @@
+focus_tree = {
+	id = saharian_commonwealth
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SAH
+		}
+	}
+	default = no
+	focus = {
+		id = saharian_heritage
+		text = Lights of Sahel
+		icon = GFX_focus_jap_manchurian_project
+		cost = 1000,00
+		x = 13
+		y = 0
+			completion_reward = {
+					add_political_power = 100
+				}
+
+	}
+	focus = {
+		id = government_rats
+		text = Government Rats
+		icon = GFX_focus_rom_parties_end
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_heritage
+		}
+		x = 12
+		y = 1
+			completion_reward = {
+					add_stability = 0.08
+				}
+
+	}
+	focus = {
+		id = сonstitution_of_saharia
+		text = Constitution of Sahara
+		icon = GFX_focus_generic_military_academy
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_heritage
+		}
+		x = 14
+		y = 1
+			completion_reward = {
+					add_political_power = 50
+				}
+
+	}
+	focus = {
+		id = path_selection
+		text = Saharian Path
+		icon = GFX_goal_generic_improve_relations
+		cost = 1000,00
+		prerequisite = {
+			focus = government_rats
+		}
+		prerequisite = {
+			focus = сonstitution_of_saharia
+		}
+		x = 13
+		y = 2
+			completion_reward = {
+					add_political_power = 20
+				}
+
+	}
+	focus = {
+		id = saharian_guard
+		text = Saharian Guards
+		icon = GFX_focus_chi_army_reform
+		cost = 1000,00
+		prerequisite = {
+			focus = path_selection
+		}
+		x = 6
+		y = 3
+
+	}
+	focus = {
+		id = saharian_11
+		text = Motorized Infantery
+		icon = GFX_goal_unknown
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_guard
+		}
+		x = 4
+		y = 4
+
+	}
+	focus = {
+		id = saharian_12
+		text = Maghrebin Troops
+		icon = GFX_goal_unknown
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_guard
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = technological_improvement
+		text = Saharian Sciences Institute
+		icon = GFX_goal_tfv_generic_tech_sharing
+		cost = 1000,00
+		prerequisite = {
+			focus = path_selection
+		}
+		x = 13
+		y = 4
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = improve_stability
+		text = The Government
+		icon = GFX_focus_generic_self_management
+		cost = 1000,00
+		prerequisite = {
+			focus = technological_improvement
+		}
+		x = 13
+		y = 6
+			completion_reward = {
+					add_stability = 0.10
+				}
+
+	}
+	focus = {
+		id = political_games
+		text = Future of Sahara
+		icon = GFX_focus_jap_cast_the_die
+		cost = 1000,00
+		prerequisite = {
+			focus = improve_stability
+		}
+		x = 13
+		y = 8
+			completion_reward = {
+					add_political_power = 50
+				}
+
+	}
+	focus = {
+		id = peaciful_choice
+		text = We don't need War
+		icon = GFX_focus_generic_treaty
+		cost = 1000,00
+		prerequisite = {
+			focus = political_games
+		}
+		mutually_exclusive = {
+			focus = military_choice
+		}
+		x = 10
+		y = 9
+			ai_will_do = {
+					factor = 50
+				}
+			completion_reward = {
+					add_stability = 0.15
+					add_war_support = -0.15
+				}
+
+	}
+	focus = {
+		id = military_choice
+		text = We, peoples of Maghreb
+		icon = GFX_focus_generic_army_tanks2
+		cost = 1000,00
+		prerequisite = {
+			focus = political_games
+		}
+		mutually_exclusive = {
+			focus = peaciful_choice
+		}
+		x = 16
+		y = 9
+			ai_will_do = {
+					factor = 50
+				}
+			completion_reward = {
+					add_stability = -0.15
+					add_war_support = 0.15
+				}
+
+	}
+	focus = {
+		id = saharian_33
+		text = Struggle for power
+		icon = GFX_goal_generic_small_arms
+		cost = 1000,00
+		prerequisite = {
+			focus = military_choice
+		}
+		x = 18
+		y = 10
+
+	}
+	focus = {
+		id = saharian_35
+		text = Our own state
+		icon = GFX_goal_unknown
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_33
+		}
+		x = 16
+		y = 11
+
+	}
+	focus = {
+		id = sahara_48
+		text = Arabic Dictatorship
+		icon = GFX_goal_flag_SAH_chaliphate
+		cost = 10,00
+		prerequisite = {
+			focus = saharian_35
+		}
+		x = 15
+		y = 12
+
+	}
+	focus = {
+		id = saharian_39
+		text = Arabic Democracy
+		icon = GFX_goal_unknown
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_35
+		}
+		x = 17
+		y = 12
+
+	}
+	focus = {
+		id = saharian_40
+		text = The African Movement
+		icon = GFX_goal_unknown
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_39
+		}
+		x = 16
+		y = 13
+
+	}
+	focus = {
+		id = saharian_navy
+		text = Saharian Navy
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 1000,00
+		prerequisite = {
+			focus = path_selection
+		}
+		x = 21
+		y = 3
+
+	}
+	focus = {
+		id = saharian_16
+		text = Big Boats
+		icon = GFX_goal_generic_navy_battleship
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_navy
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = saharian_19
+		text = Airplanes on Boats
+		icon = GFX_goal_generic_navy_carrier
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_16
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = saharian_41
+		text = The Chalifate
+		icon = GFX_goal_unknown
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_33
+		}
+		x = 20
+		y = 11
+
+	}
+	focus = {
+		id = saharian_42
+		text = Religious Constitution
+		icon = GFX_goal_unknown
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_41
+		}
+		x = 20
+		y = 12
+
+	}
+	focus = {
+		id = saharian_43
+		text = Unify Arab
+		icon = GFX_goal_unknown
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_42
+		}
+		x = 20
+		y = 13
+
+	}
+	focus = {
+		id = saharian_17
+		text = Small Boats
+		icon = GFX_focus_generic_cruiser2
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_navy
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = saharian_20
+		text = Under the sea
+		icon = GFX_goal_generic_navy_submarine
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_17
+		}
+		x = 23
+		y = 5
+
+	}
+	focus = {
+		id = Mare Nostrum
+		icon = GFX_goal_unknown
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_19
+		}
+		prerequisite = {
+			focus = saharian_20
+		}
+		x = 21
+		y = 6
+
+	}
+	focus = {
+		id = saharian_industrialization
+		text = Saharian Industry
+		icon = GFX_focus_generic_industry_3
+		cost = 1000,00
+		prerequisite = {
+			focus = path_selection
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = saharian_22
+		text = Military Upgrade I
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_industrialization
+		}
+		x = 27
+		y = 4
+
+	}
+	focus = {
+		id = saharian_23
+		text = Military Upgrade II
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_22
+		}
+		x = 27
+		y = 5
+
+	}
+	focus = {
+		id = saharian_26
+		text = Military Upgrade III
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_23
+		}
+		x = 27
+		y = 6
+
+	}
+	focus = {
+		id = saharian_28
+		text = Military Upgrade IV
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_26
+		}
+		x = 28
+		y = 7
+
+	}
+	focus = {
+		id = saharian_47
+		text = Roads of the Sahel
+		icon = GFX_focus_generic_rubber
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_industrialization
+		}
+		x = 30
+		y = 4
+
+	}
+	focus = {
+		id = saharian_46
+		text = Railroads of the Sahel
+		icon = GFX_focus_generic_rubber
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_47
+		}
+		x = 30
+		y = 5
+
+	}
+	focus = {
+		id = saharian_45
+		text = Urban Region
+		icon = GFX_focus_generic_rubber
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_46
+		}
+		x = 30
+		y = 6
+
+	}
+	focus = {
+		id = saharian_30
+		text = Powerhouse of Africa
+		icon = GFX_goal_unknown
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_28
+		}
+		prerequisite = {
+			focus = saharian_45
+		}
+		x = 29
+		y = 8
+
+	}
+	focus = {
+		id = saharian_13
+		text = Design for tanks
+		icon = GFX_goal_unknown
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_11
+		}
+		x = 4
+		y = 5
+
+	}
+	focus = {
+		id = saharian_14
+		text = The North Africa
+		icon = GFX_focus_generic_combined_arms
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_13
+		}
+		prerequisite = {
+			focus = saharian_15
+		}
+		x = 6
+		y = 6
+
+	}
+	focus = {
+		id = saharian_15
+		text = Arabic Airplanes
+		icon = GFX_goal_unknown
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_12
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = saharian_24
+		text = Civilian Upgrade I
+		icon = GFX_goal_unknown
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_industrialization
+		}
+		x = 33
+		y = 4
+
+	}
+	focus = {
+		id = saharian_25
+		text = Civilian Upgrade II
+		icon = GFX_goal_unknown
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_24
+		}
+		x = 33
+		y = 5
+
+	}
+	focus = {
+		id = saharian_27
+		text = Civilian Upgrade III
+		icon = GFX_goal_unknown
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_25
+		}
+		x = 33
+		y = 6
+
+	}
+	focus = {
+		id = saharian_29
+		text = Civilian Upgrade IV
+		icon = GFX_goal_unknown
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_27
+		}
+		x = 32
+		y = 7
+
+	}
+	focus = {
+		id = saharian_31
+		text = Bunkers
+		icon = GFX_goal_unknown
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_29
+		}
+		prerequisite = {
+			focus = saharian_45
+		}
+		x = 31
+		y = 8
+
+	}
+	focus = {
+		id = saharian_32
+		text = Soumission
+		icon = GFX_goal_unknown
+		cost = 1000,00
+		prerequisite = {
+			focus = peaciful_choice
+		}
+		x = 8
+		y = 10
+
+	}
+	focus = {
+		id = saharian_34
+		text = Chinese cooperation
+		icon = GFX_focus_prc_proclaim_the_peoples_republic
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_32
+		}
+		mutually_exclusive = {
+			focus = newfocus_49
+		}
+		x = 10
+		y = 11
+
+	}
+	focus = {
+		id = saharian_36
+		text = African Union
+		icon = GFX_goal_unknown
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_38
+			focus = saharian_40
+		}
+		x = 13
+		y = 14
+
+	}
+	focus = {
+		id = saharian_37
+		text = A good Puppet
+		icon = GFX_goal_unknown
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_44
+			focus = newfocus_49
+			focus = saharian_34
+		}
+		mutually_exclusive = {
+			focus = saharian_38
+		}
+		x = 8
+		y = 13
+
+	}
+	focus = {
+		id = saharian_38
+		text = Declare Neutrality
+		icon = GFX_goal_unknown
+		cost = 1000,00
+		prerequisite = {
+			focus = newfocus_49
+			focus = saharian_34
+			focus = saharian_44
+		}
+		mutually_exclusive = {
+			focus = saharian_37
+		}
+		x = 10
+		y = 13
+
+	}
+	focus = {
+		id = saharian_44
+		text = Reach to Germany
+		icon = GFX_goal_unknown
+		cost = 1000,00
+		prerequisite = {
+			focus = saharian_32
+		}
+		mutually_exclusive = {
+			focus = newfocus_49
+		}
+		x = 6
+		y = 11
+
+	}
+	focus = {
+		id = newfocus_49
+		text = Russian Vodka are the best
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = saharian_32
+		}
+		mutually_exclusive = {
+			focus = saharian_34
+			focus = saharian_44
+		}
+		x = 8
+		y = 11
+
+	}
+}
