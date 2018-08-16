@@ -68,6 +68,9 @@ focus_tree = {
 				}
 
 	}
+	
+	###########Military stuff##########
+
 	focus = {
 		id = saharian_guard
 		text = Saharian Guards
@@ -350,7 +353,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = Mare Nostrum
+		id = saharian_18
 		icon = GFX_goal_unknown
 		cost = 1000,00
 		prerequisite = {
