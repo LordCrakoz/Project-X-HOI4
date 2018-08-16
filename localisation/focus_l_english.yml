@@ -38,7 +38,11 @@
  neo_government:0 "Neo Government"
  generic_national_stability:0 "Generic National Stability"
  WHILE_FOCUSING:0 ""
+ 
+ 
 ###########SAHARA#####################
+
+
  saharian_heritage:0 "Saharian Heritage!"
  saharian_heritage_desc:0 "Saharan commonwealth is one of the richest nations in Africa, but it is the main thing thanks to the great nation like the ATC, Russia and Kaita. in the sacrament, there are a number of clans that have dined to create a new government. they were assisted by other nations. and now sugar is waiting for choice, either to go peacefully or to go to war and abandon the influence of other countries and create a Saharan heritage!"
  constitution_of_saharia:0 "Constitution of Saharia"
@@ -48,7 +52,17 @@
  path_selection:0 "Our Path!"
  path_selection_desc:0 "And so, it's time for us to choose the way in which the prosperous future or its complete collapse awaits our country. We need to take the right choice of our nations!"
  ####Military#########
+ 
  saharian_guard:0 "Saharian Guard"
+ saharian_11:0 "Motorized Infantery"
+ saharian_12:0 "Maghrebin Troops"
+ saharian_13:0 "Design for tanks"
+ saharian_14:0 "The North Africa"
+ saharian_15:0 "Arabic Airplanes"
+ 
+ saharian_16:0
+ 
+ 
  saharian_navy:0 "Saharian Navy"
  technological_improvement:0 "Technological Improvement"
  improve_stability:0 "Improve Saharian Stability"
